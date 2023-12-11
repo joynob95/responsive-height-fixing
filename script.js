@@ -20,14 +20,14 @@ $(document).ready(function(){
       // Function to handle media query changes
       function handleMediaQuery() {
 
-        const tabletQuery = window.matchMedia("(max-width: 1150px) and (max-height: 550px)");
+        const tabletQuery = window.matchMedia("(max-width: 1150px) and (max-height: 860px)");
         const tablet2Query = window.matchMedia("(max-width: 880px) and (max-height: 510px)");
         const tablet3Query = window.matchMedia("(max-width: 780px) and (max-height: 500px)");
         const mobileQuery = window.matchMedia("(max-width: 768px)");
         const desktopQuery = window.matchMedia("(max-height: 450px)");
 
         if (mobileQuery.matches) {
-          // Destroy the slider for mobile
+          // Destroy the slider for less height
           destroySlider();
         } else if (tabletQuery.matches) {
           destroySlider();
